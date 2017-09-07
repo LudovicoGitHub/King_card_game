@@ -4,7 +4,7 @@ class Card:
         self.rank = rank
         self.suit = suit
     def cardName(self):
-        specialCards = {11: "Jack", 12:"Queen", 13:"King", 1:"Ace"}
+        specialCards = {11: "Jack", 12:"Queen", 13:"King", 14:"Ace"}
         if self.rank in specialCards:
             return specialCards[self.rank] + "of" + self.suit
         else:
