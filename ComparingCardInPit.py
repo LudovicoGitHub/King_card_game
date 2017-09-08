@@ -1,6 +1,6 @@
-from King import *
-from ChoosingCardToPlay.py import *
-from GivingCardToPlayers.py import *
+
+from ChoosingCardToPlay import *
+from GivingCardsToPlayers import *
 
 # we arrive here with a full pit and info of the first suit played.
 def comparing(pit,position_of_first_suit_played):
@@ -14,6 +14,3 @@ def comparing(pit,position_of_first_suit_played):
     # of players, so we just need to pop all the cards into the cardstaken of the player.
     for i in range(0,4):
         arrayOfPlayers[winning_card].cardsTaken.append(pit.pop(i))
-
-def printing_pit(pit):
-    print(pit)

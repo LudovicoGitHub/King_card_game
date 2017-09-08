@@ -14,5 +14,7 @@ def ChooseYourPlay(PositionInArrayOfPlayer,pit):
             counter = counter + 1
     if counter == 4:
         position_of_first_suit_played = PositionInArrayOfPlayer
-
     pit[PositionInArrayOfPlayer] = arrayOfPlayers[PositionInArrayOfPlayer].hand.pop(choiche)
+    print(pit)
+    if counter == 4:
+        return position_of_first_suit_played

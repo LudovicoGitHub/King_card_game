@@ -14,7 +14,8 @@ for i in range(0,4):
     printCurrentPlayerHand(i)
 printingPoints()
 for i in range(0,4):
-    ChooseYourPlay(i,pit)
+    position_of_first_suit_played = ChooseYourPlay(i,pit)
+
 comparing(pit,position_of_first_suit_played)
 for i in range(0,4):
     print(arrayOfPlayers[i].cardsTaken)
