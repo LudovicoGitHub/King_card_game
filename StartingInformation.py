@@ -33,9 +33,8 @@ def starting_info():
         print("Well, this is actually great news! If that is the case, the player" +
               "can play whatever he wants, and he is never going to take the pit")
         print("There is one more thing you need to know. In the briscola hands,"+
-              "you need to take as many pits as you can. In that case, when you"+
-              "can answer with whatever you want, you may use the suit is briscola" +
-              "it beats every other suit.")
+              "you need to take as many pits as you can. The briscola suit beats"+
+              "every other suit")
         print("Great, you are all ready to play! For more info, consult the Wikipedia page of King.")
         print('-'*10 + "The game is now starting." + "-"*10)
     else:
