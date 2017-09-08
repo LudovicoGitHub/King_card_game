@@ -1,4 +1,4 @@
-from Card import creatingDeckAlreadyShuffled
+from Card import *
 from Player import *
 def GivingCardTo():
     my_deck = creatingDeckAlreadyShuffled()

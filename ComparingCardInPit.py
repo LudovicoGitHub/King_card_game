@@ -1,9 +1,9 @@
 from King import *
-from ChoosingCardToPlay.py import position_of_first_suit_played
+from ChoosingCardToPlay.py import *
 from GivingCardToPlayers.py import *
 
 # we arrive here with a full pit and info of the first suit played.
-def comparing_the_pit_giving_to_the_player(pit,position_of_first_suit_played):
+def comparing(pit,position_of_first_suit_played):
     dominant_suit = pit[position_of_first_suit_played]
     winning_card = pit[0]
     for i in range(0,4):
@@ -15,4 +15,5 @@ def comparing_the_pit_giving_to_the_player(pit,position_of_first_suit_played):
     for i in range(0,4):
         arrayOfPlayers[winning_card].cardsTaken.append(pit.pop(i))
 
-    
+def printing_pit(pit):
+    print(pit)
